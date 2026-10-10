@@ -1,10 +1,18 @@
 #include <iostream>
 using namespace std;
 
-// Ham tinh tong 2 so nguyen
-int tinhTong(int a, int b) {
+// Ham template: Tu dong nhan dien kieu du lieu (int, float, double...)
+template <typename T>
+T tinhTong(T a, T b) {
     return a + b;
-} int main() {
-    cout << "Tong: " << tinhTong(5, 7) << endl;
+}
+
+int main() {
+    // Tinh tong 2 so nguyen
+    cout << "Tong so nguyen: " << tinhTong(5, 7) << endl;
+
+    // Tinh tong 2 so thap phan
+    cout << "Tong so thuc:   " << tinhTong(3.5, 4.2) << endl;
+
     return 0;
 }
